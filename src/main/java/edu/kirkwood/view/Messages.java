@@ -22,6 +22,17 @@ public class Messages {
         displayMessage("Thank you for using Marc's Fraction Calculator");
     }
 
+    public static void currencyGreet() {
+        displayMessage("Welcome to Currency Calculator.");
+        System.out.println("Enter calculations in the format: <amount1> <currency1> <operator> <amount2> <currency2>" + "\n or in <amount> <currency1> to <currency2>");
+        System.out.println("Example: 5.00 USD");
+        System.out.println("The system only accepts 3 digit currency codes, only supported currencies are USD, JPY, GBP, and EUR");
+    }
+
+    public static void currencyGoodbye() {
+        displayMessage("Thank you for using Currency Calculator");
+    }
+  
     public static void investmentGreet() {
         displayMessage("Welcome to Lizbeth's Investment Calculator");
         // You'll need to update the instructions for how the user interacts with the investment calculator
@@ -80,15 +91,14 @@ public class Messages {
 
     public static void ingredientGreet() {
         displayMessage("Welcome to Edward's Ingredient Calculator");
-        System.out.println("Perform arithmetic operations on cooking ingredients with automatic unit conversions");
-        System.out.println("Supports volume units: tsp, tbsp, fl oz, cup, pint, quart");
-        System.out.println("Supports weight units: oz, lb, g, kg");
+        System.out.println("Perform calculations with cooking ingredients");
+        System.out.println("Supports volume (tsp, tbsp, cups, etc.) and weight (oz, lb, g, kg) measurements\n");
     }
 
     public static void ingredientGoodbye() {
         displayMessage("Thank you for using Edward's Ingredient Calculator");
     }
-  
+
     public static void ethanGreet() {
         displayMessage("Welcome to Ethan's EthansTemperature Calculator!");
         System.out.println("Enter a temperature value and scale (C, F, K).");
@@ -97,5 +107,37 @@ public class Messages {
 
     public static void ethanGoodbye(){
         displayMessage("Thank you for using Ethan's EthansTemperature Calculator. Goodbye!");
+    }
+
+    public static void ryanTemperatureGreet() {
+        UIUtility.displayMessage("Welcome to Ryan's Temperature Converter");
+        System.out.println("Enter a whole number when prompted");
+    }
+
+    public static void ryanTemperatureGoodbye() {
+        UIUtility.displayMessage("Thank you for using Ryan's Temperature Converter");
+    }
+  
+    public static void characterCalcGreet(){
+        displayMessage("Welcome to the character moveset Calculator!");
+        System.out.println("Make sure that you type the option exactly as it is shown (just the word)");
+        System.out.println("A move startup is how long it takes for the move to hit the opponent. Enter in a positive whole number.");
+        System.out.println("A character status is one of the following (Stand, Crouch, downed).");
+        System.out.println("A move type is the type of move the character will do which is one of the following (Command Grab, high, medium, low, throw.)");
+        System.out.println("Enter calculations in the format: [Character1 MoveStartup], [Character1 ChacracterStatus]," +
+                " [Character1 MoveType], [Character2 MoveStartup], [Character2 ChacracterStatus], [Character2 MoveType]");
+    }
+
+    public static void characterCalcGoodbye(){
+        displayMessage("Thank you for using the character moveset Calculator");
+    }
+    public static void myCalculatorGreet() {
+        displayMessage("Welcome to Yousif Money Calculator");
+        System.out.println("Enter calculations in the format: [Money] [operator] [Money]");
+        System.out.println("Example: 100USD + 10USD\n");
+        System.out.println("Allowed Currencies: USD, GBP, CAD");
+    }
+    public static void myCalculatorGoodbye() {
+        displayMessage("Thanks for join me in to my money Calculator");
     }
 }
